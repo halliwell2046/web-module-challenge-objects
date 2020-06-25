@@ -31,6 +31,21 @@ and should return a number.
 
 For example, burger.discount("teacher") would return 13.5 and burger.discount("public") would return 16.2*/
 
+burger.discount = function (customer){
+  if (customer === 'teacher'){
+    console.log(burger.price * 0.75);
+
+  } else if (customer === 'student'){
+    console.log(burger.price * 0.75);
+
+  } else {
+    console.log( burger.price *0.90);
+  }
+}
+
+burger.discount('teacher');
+burger.discount('student');
+burger.discount('public');
 
 
 ///////////////Reviews (MVP)///////////////////
